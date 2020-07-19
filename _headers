@@ -100,41 +100,6 @@
   Link: </component---src-templates-page-template-js-f8ac9d11a0afb6af50be.js>; rel=preload; as=script
   Link: </page-data/app-data.json>; rel=preload; as=fetch; crossorigin
   Link: </page-data/pages/about/page-data.json>; rel=preload; as=fetch; crossorigin
-/pages/contacts/
-  Link: </webpack-runtime-9a09b808978cc62b5d0a.js>; rel=preload; as=script
-  Link: </styles-89fd2ae28bdf06750a71.js>; rel=preload; as=script
-  Link: </framework-a4620de0399b10c30110.js>; rel=preload; as=script
-  Link: </532a2f07-36c395669df4dc0275d8.js>; rel=preload; as=script
-  Link: </app-731f9a8b8f3f889cb6bc.js>; rel=preload; as=script
-  Link: </styles-89fd2ae28bdf06750a71.js>; rel=preload; as=script
-  Link: </cd95ea5cbd2c605f26db819f07999610c9ff4310-14114628893eadf48cd7.js>; rel=preload; as=script
-  Link: </component---src-templates-page-template-js-f8ac9d11a0afb6af50be.js>; rel=preload; as=script
-  Link: </page-data/app-data.json>; rel=preload; as=fetch; crossorigin
-  Link: </page-data/pages/contacts/page-data.json>; rel=preload; as=fetch; crossorigin
-/posts/buxton-challenge/
-  Link: </webpack-runtime-9a09b808978cc62b5d0a.js>; rel=preload; as=script
-  Link: </styles-89fd2ae28bdf06750a71.js>; rel=preload; as=script
-  Link: </framework-a4620de0399b10c30110.js>; rel=preload; as=script
-  Link: </532a2f07-36c395669df4dc0275d8.js>; rel=preload; as=script
-  Link: </app-731f9a8b8f3f889cb6bc.js>; rel=preload; as=script
-  Link: </styles-89fd2ae28bdf06750a71.js>; rel=preload; as=script
-  Link: </cd95ea5cbd2c605f26db819f07999610c9ff4310-14114628893eadf48cd7.js>; rel=preload; as=script
-  Link: </643651a62fb35a9bb4f20061cb1f214a352d7976-12cd6796cf0ce7e3f3f5.js>; rel=preload; as=script
-  Link: </component---src-templates-post-template-js-c4aa16e664e9d724a55e.js>; rel=preload; as=script
-  Link: </page-data/app-data.json>; rel=preload; as=fetch; crossorigin
-  Link: </page-data/posts/buxton-challenge/page-data.json>; rel=preload; as=fetch; crossorigin
-/posts/lessons-from-stephen-king/
-  Link: </webpack-runtime-9a09b808978cc62b5d0a.js>; rel=preload; as=script
-  Link: </styles-89fd2ae28bdf06750a71.js>; rel=preload; as=script
-  Link: </framework-a4620de0399b10c30110.js>; rel=preload; as=script
-  Link: </532a2f07-36c395669df4dc0275d8.js>; rel=preload; as=script
-  Link: </app-731f9a8b8f3f889cb6bc.js>; rel=preload; as=script
-  Link: </styles-89fd2ae28bdf06750a71.js>; rel=preload; as=script
-  Link: </cd95ea5cbd2c605f26db819f07999610c9ff4310-14114628893eadf48cd7.js>; rel=preload; as=script
-  Link: </643651a62fb35a9bb4f20061cb1f214a352d7976-12cd6796cf0ce7e3f3f5.js>; rel=preload; as=script
-  Link: </component---src-templates-post-template-js-c4aa16e664e9d724a55e.js>; rel=preload; as=script
-  Link: </page-data/app-data.json>; rel=preload; as=fetch; crossorigin
-  Link: </page-data/posts/lessons-from-stephen-king/page-data.json>; rel=preload; as=fetch; crossorigin
 /posts/uncommon-financial-advice/
   Link: </webpack-runtime-9a09b808978cc62b5d0a.js>; rel=preload; as=script
   Link: </styles-89fd2ae28bdf06750a71.js>; rel=preload; as=script
@@ -147,6 +112,29 @@
   Link: </component---src-templates-post-template-js-c4aa16e664e9d724a55e.js>; rel=preload; as=script
   Link: </page-data/app-data.json>; rel=preload; as=fetch; crossorigin
   Link: </page-data/posts/uncommon-financial-advice/page-data.json>; rel=preload; as=fetch; crossorigin
+/posts/buxton-challenge/
+  Link: </webpack-runtime-9a09b808978cc62b5d0a.js>; rel=preload; as=script
+  Link: </styles-89fd2ae28bdf06750a71.js>; rel=preload; as=script
+  Link: </framework-a4620de0399b10c30110.js>; rel=preload; as=script
+  Link: </532a2f07-36c395669df4dc0275d8.js>; rel=preload; as=script
+  Link: </app-731f9a8b8f3f889cb6bc.js>; rel=preload; as=script
+  Link: </styles-89fd2ae28bdf06750a71.js>; rel=preload; as=script
+  Link: </cd95ea5cbd2c605f26db819f07999610c9ff4310-14114628893eadf48cd7.js>; rel=preload; as=script
+  Link: </643651a62fb35a9bb4f20061cb1f214a352d7976-12cd6796cf0ce7e3f3f5.js>; rel=preload; as=script
+  Link: </component---src-templates-post-template-js-c4aa16e664e9d724a55e.js>; rel=preload; as=script
+  Link: </page-data/app-data.json>; rel=preload; as=fetch; crossorigin
+  Link: </page-data/posts/buxton-challenge/page-data.json>; rel=preload; as=fetch; crossorigin
+/pages/contacts/
+  Link: </webpack-runtime-9a09b808978cc62b5d0a.js>; rel=preload; as=script
+  Link: </styles-89fd2ae28bdf06750a71.js>; rel=preload; as=script
+  Link: </framework-a4620de0399b10c30110.js>; rel=preload; as=script
+  Link: </532a2f07-36c395669df4dc0275d8.js>; rel=preload; as=script
+  Link: </app-731f9a8b8f3f889cb6bc.js>; rel=preload; as=script
+  Link: </styles-89fd2ae28bdf06750a71.js>; rel=preload; as=script
+  Link: </cd95ea5cbd2c605f26db819f07999610c9ff4310-14114628893eadf48cd7.js>; rel=preload; as=script
+  Link: </component---src-templates-page-template-js-f8ac9d11a0afb6af50be.js>; rel=preload; as=script
+  Link: </page-data/app-data.json>; rel=preload; as=fetch; crossorigin
+  Link: </page-data/pages/contacts/page-data.json>; rel=preload; as=fetch; crossorigin
 /posts/ideation-roadmap/
   Link: </webpack-runtime-9a09b808978cc62b5d0a.js>; rel=preload; as=script
   Link: </styles-89fd2ae28bdf06750a71.js>; rel=preload; as=script
@@ -159,7 +147,7 @@
   Link: </component---src-templates-post-template-js-c4aa16e664e9d724a55e.js>; rel=preload; as=script
   Link: </page-data/app-data.json>; rel=preload; as=fetch; crossorigin
   Link: </page-data/posts/ideation-roadmap/page-data.json>; rel=preload; as=fetch; crossorigin
-/posts/bookworms-guide-to-data-science/
+/posts/lessons-from-stephen-king/
   Link: </webpack-runtime-9a09b808978cc62b5d0a.js>; rel=preload; as=script
   Link: </styles-89fd2ae28bdf06750a71.js>; rel=preload; as=script
   Link: </framework-a4620de0399b10c30110.js>; rel=preload; as=script
@@ -170,43 +158,7 @@
   Link: </643651a62fb35a9bb4f20061cb1f214a352d7976-12cd6796cf0ce7e3f3f5.js>; rel=preload; as=script
   Link: </component---src-templates-post-template-js-c4aa16e664e9d724a55e.js>; rel=preload; as=script
   Link: </page-data/app-data.json>; rel=preload; as=fetch; crossorigin
-  Link: </page-data/posts/bookworms-guide-to-data-science/page-data.json>; rel=preload; as=fetch; crossorigin
-/posts/starting-your-data-science-journey/
-  Link: </webpack-runtime-9a09b808978cc62b5d0a.js>; rel=preload; as=script
-  Link: </styles-89fd2ae28bdf06750a71.js>; rel=preload; as=script
-  Link: </framework-a4620de0399b10c30110.js>; rel=preload; as=script
-  Link: </532a2f07-36c395669df4dc0275d8.js>; rel=preload; as=script
-  Link: </app-731f9a8b8f3f889cb6bc.js>; rel=preload; as=script
-  Link: </styles-89fd2ae28bdf06750a71.js>; rel=preload; as=script
-  Link: </cd95ea5cbd2c605f26db819f07999610c9ff4310-14114628893eadf48cd7.js>; rel=preload; as=script
-  Link: </643651a62fb35a9bb4f20061cb1f214a352d7976-12cd6796cf0ce7e3f3f5.js>; rel=preload; as=script
-  Link: </component---src-templates-post-template-js-c4aa16e664e9d724a55e.js>; rel=preload; as=script
-  Link: </page-data/app-data.json>; rel=preload; as=fetch; crossorigin
-  Link: </page-data/posts/starting-your-data-science-journey/page-data.json>; rel=preload; as=fetch; crossorigin
-/posts/minimizing-wtfs/
-  Link: </webpack-runtime-9a09b808978cc62b5d0a.js>; rel=preload; as=script
-  Link: </styles-89fd2ae28bdf06750a71.js>; rel=preload; as=script
-  Link: </framework-a4620de0399b10c30110.js>; rel=preload; as=script
-  Link: </532a2f07-36c395669df4dc0275d8.js>; rel=preload; as=script
-  Link: </app-731f9a8b8f3f889cb6bc.js>; rel=preload; as=script
-  Link: </styles-89fd2ae28bdf06750a71.js>; rel=preload; as=script
-  Link: </cd95ea5cbd2c605f26db819f07999610c9ff4310-14114628893eadf48cd7.js>; rel=preload; as=script
-  Link: </643651a62fb35a9bb4f20061cb1f214a352d7976-12cd6796cf0ce7e3f3f5.js>; rel=preload; as=script
-  Link: </component---src-templates-post-template-js-c4aa16e664e9d724a55e.js>; rel=preload; as=script
-  Link: </page-data/app-data.json>; rel=preload; as=fetch; crossorigin
-  Link: </page-data/posts/minimizing-wtfs/page-data.json>; rel=preload; as=fetch; crossorigin
-/posts/foundations-of-ai/
-  Link: </webpack-runtime-9a09b808978cc62b5d0a.js>; rel=preload; as=script
-  Link: </styles-89fd2ae28bdf06750a71.js>; rel=preload; as=script
-  Link: </framework-a4620de0399b10c30110.js>; rel=preload; as=script
-  Link: </532a2f07-36c395669df4dc0275d8.js>; rel=preload; as=script
-  Link: </app-731f9a8b8f3f889cb6bc.js>; rel=preload; as=script
-  Link: </styles-89fd2ae28bdf06750a71.js>; rel=preload; as=script
-  Link: </cd95ea5cbd2c605f26db819f07999610c9ff4310-14114628893eadf48cd7.js>; rel=preload; as=script
-  Link: </643651a62fb35a9bb4f20061cb1f214a352d7976-12cd6796cf0ce7e3f3f5.js>; rel=preload; as=script
-  Link: </component---src-templates-post-template-js-c4aa16e664e9d724a55e.js>; rel=preload; as=script
-  Link: </page-data/app-data.json>; rel=preload; as=fetch; crossorigin
-  Link: </page-data/posts/foundations-of-ai/page-data.json>; rel=preload; as=fetch; crossorigin
+  Link: </page-data/posts/lessons-from-stephen-king/page-data.json>; rel=preload; as=fetch; crossorigin
 /posts/on-mentorship/
   Link: </webpack-runtime-9a09b808978cc62b5d0a.js>; rel=preload; as=script
   Link: </styles-89fd2ae28bdf06750a71.js>; rel=preload; as=script
@@ -219,6 +171,42 @@
   Link: </component---src-templates-post-template-js-c4aa16e664e9d724a55e.js>; rel=preload; as=script
   Link: </page-data/app-data.json>; rel=preload; as=fetch; crossorigin
   Link: </page-data/posts/on-mentorship/page-data.json>; rel=preload; as=fetch; crossorigin
+/posts/minimizing-wtfs/
+  Link: </webpack-runtime-9a09b808978cc62b5d0a.js>; rel=preload; as=script
+  Link: </styles-89fd2ae28bdf06750a71.js>; rel=preload; as=script
+  Link: </framework-a4620de0399b10c30110.js>; rel=preload; as=script
+  Link: </532a2f07-36c395669df4dc0275d8.js>; rel=preload; as=script
+  Link: </app-731f9a8b8f3f889cb6bc.js>; rel=preload; as=script
+  Link: </styles-89fd2ae28bdf06750a71.js>; rel=preload; as=script
+  Link: </cd95ea5cbd2c605f26db819f07999610c9ff4310-14114628893eadf48cd7.js>; rel=preload; as=script
+  Link: </643651a62fb35a9bb4f20061cb1f214a352d7976-12cd6796cf0ce7e3f3f5.js>; rel=preload; as=script
+  Link: </component---src-templates-post-template-js-c4aa16e664e9d724a55e.js>; rel=preload; as=script
+  Link: </page-data/app-data.json>; rel=preload; as=fetch; crossorigin
+  Link: </page-data/posts/minimizing-wtfs/page-data.json>; rel=preload; as=fetch; crossorigin
+/posts/starting-your-data-science-journey/
+  Link: </webpack-runtime-9a09b808978cc62b5d0a.js>; rel=preload; as=script
+  Link: </styles-89fd2ae28bdf06750a71.js>; rel=preload; as=script
+  Link: </framework-a4620de0399b10c30110.js>; rel=preload; as=script
+  Link: </532a2f07-36c395669df4dc0275d8.js>; rel=preload; as=script
+  Link: </app-731f9a8b8f3f889cb6bc.js>; rel=preload; as=script
+  Link: </styles-89fd2ae28bdf06750a71.js>; rel=preload; as=script
+  Link: </cd95ea5cbd2c605f26db819f07999610c9ff4310-14114628893eadf48cd7.js>; rel=preload; as=script
+  Link: </643651a62fb35a9bb4f20061cb1f214a352d7976-12cd6796cf0ce7e3f3f5.js>; rel=preload; as=script
+  Link: </component---src-templates-post-template-js-c4aa16e664e9d724a55e.js>; rel=preload; as=script
+  Link: </page-data/app-data.json>; rel=preload; as=fetch; crossorigin
+  Link: </page-data/posts/starting-your-data-science-journey/page-data.json>; rel=preload; as=fetch; crossorigin
+/posts/bookworms-guide-to-data-science/
+  Link: </webpack-runtime-9a09b808978cc62b5d0a.js>; rel=preload; as=script
+  Link: </styles-89fd2ae28bdf06750a71.js>; rel=preload; as=script
+  Link: </framework-a4620de0399b10c30110.js>; rel=preload; as=script
+  Link: </532a2f07-36c395669df4dc0275d8.js>; rel=preload; as=script
+  Link: </app-731f9a8b8f3f889cb6bc.js>; rel=preload; as=script
+  Link: </styles-89fd2ae28bdf06750a71.js>; rel=preload; as=script
+  Link: </cd95ea5cbd2c605f26db819f07999610c9ff4310-14114628893eadf48cd7.js>; rel=preload; as=script
+  Link: </643651a62fb35a9bb4f20061cb1f214a352d7976-12cd6796cf0ce7e3f3f5.js>; rel=preload; as=script
+  Link: </component---src-templates-post-template-js-c4aa16e664e9d724a55e.js>; rel=preload; as=script
+  Link: </page-data/app-data.json>; rel=preload; as=fetch; crossorigin
+  Link: </page-data/posts/bookworms-guide-to-data-science/page-data.json>; rel=preload; as=fetch; crossorigin
 /posts/practical-ml-problems/
   Link: </webpack-runtime-9a09b808978cc62b5d0a.js>; rel=preload; as=script
   Link: </styles-89fd2ae28bdf06750a71.js>; rel=preload; as=script
@@ -231,7 +219,7 @@
   Link: </component---src-templates-post-template-js-c4aa16e664e9d724a55e.js>; rel=preload; as=script
   Link: </page-data/app-data.json>; rel=preload; as=fetch; crossorigin
   Link: </page-data/posts/practical-ml-problems/page-data.json>; rel=preload; as=fetch; crossorigin
-/posts/will-it-scale/
+/posts/foundations-of-ai/
   Link: </webpack-runtime-9a09b808978cc62b5d0a.js>; rel=preload; as=script
   Link: </styles-89fd2ae28bdf06750a71.js>; rel=preload; as=script
   Link: </framework-a4620de0399b10c30110.js>; rel=preload; as=script
@@ -242,7 +230,7 @@
   Link: </643651a62fb35a9bb4f20061cb1f214a352d7976-12cd6796cf0ce7e3f3f5.js>; rel=preload; as=script
   Link: </component---src-templates-post-template-js-c4aa16e664e9d724a55e.js>; rel=preload; as=script
   Link: </page-data/app-data.json>; rel=preload; as=fetch; crossorigin
-  Link: </page-data/posts/will-it-scale/page-data.json>; rel=preload; as=fetch; crossorigin
+  Link: </page-data/posts/foundations-of-ai/page-data.json>; rel=preload; as=fetch; crossorigin
 /posts/predicting-demand-in-a-crisis/
   Link: </webpack-runtime-9a09b808978cc62b5d0a.js>; rel=preload; as=script
   Link: </styles-89fd2ae28bdf06750a71.js>; rel=preload; as=script
@@ -255,6 +243,18 @@
   Link: </component---src-templates-post-template-js-c4aa16e664e9d724a55e.js>; rel=preload; as=script
   Link: </page-data/app-data.json>; rel=preload; as=fetch; crossorigin
   Link: </page-data/posts/predicting-demand-in-a-crisis/page-data.json>; rel=preload; as=fetch; crossorigin
+/posts/will-it-scale/
+  Link: </webpack-runtime-9a09b808978cc62b5d0a.js>; rel=preload; as=script
+  Link: </styles-89fd2ae28bdf06750a71.js>; rel=preload; as=script
+  Link: </framework-a4620de0399b10c30110.js>; rel=preload; as=script
+  Link: </532a2f07-36c395669df4dc0275d8.js>; rel=preload; as=script
+  Link: </app-731f9a8b8f3f889cb6bc.js>; rel=preload; as=script
+  Link: </styles-89fd2ae28bdf06750a71.js>; rel=preload; as=script
+  Link: </cd95ea5cbd2c605f26db819f07999610c9ff4310-14114628893eadf48cd7.js>; rel=preload; as=script
+  Link: </643651a62fb35a9bb4f20061cb1f214a352d7976-12cd6796cf0ce7e3f3f5.js>; rel=preload; as=script
+  Link: </component---src-templates-post-template-js-c4aa16e664e9d724a55e.js>; rel=preload; as=script
+  Link: </page-data/app-data.json>; rel=preload; as=fetch; crossorigin
+  Link: </page-data/posts/will-it-scale/page-data.json>; rel=preload; as=fetch; crossorigin
 /posts/product-pricing-NLP/
   Link: </webpack-runtime-9a09b808978cc62b5d0a.js>; rel=preload; as=script
   Link: </styles-89fd2ae28bdf06750a71.js>; rel=preload; as=script
