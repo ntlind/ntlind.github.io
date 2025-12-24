@@ -28,3 +28,5 @@ update-gh-pages:
 clean:
 	rm -rf dist node_modules
 
+convert-carousel-movs:
+	for file in ./public/carousel/*.mov; do ffmpeg -i "$file" -c:v libvpx-vp9 -crf 30 -b:v 0 -c:a libopus "${file%.mov}.webm"; done
