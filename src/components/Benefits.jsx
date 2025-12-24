@@ -43,7 +43,7 @@ function BenefitTile({ benefit, isHovered, onHover, onLeave, position }) {
       className={`
         bg-white rounded-10 p-6 md:p-8
         flex flex-col
-        cursor-pointer
+        md:cursor-pointer
         h-full
       `}
       onMouseEnter={onHover}
@@ -76,10 +76,10 @@ function BenefitTile({ benefit, isHovered, onHover, onLeave, position }) {
       {/* Spacer to push content to bottom */}
       <div className="flex-1" />
 
-      {/* Content container with fade animations */}
+      {/* Content container with fade animations on desktop, static on mobile */}
       <div
         className={`
-          ${showText 
+          md:${showText 
             ? 'opacity-100 translate-y-0 transition-all duration-300' 
             : 'opacity-0 translate-y-4 transition-none'
           }
@@ -90,11 +90,12 @@ function BenefitTile({ benefit, isHovered, onHover, onLeave, position }) {
           {benefit.title}
         </h3>
 
-        {/* Description - shown on hover */}
+        {/* Description - shown on hover on desktop, always shown on mobile */}
         <div
           className={`
-            overflow-hidden transition-all duration-350
-            ${isHovered ? 'max-h-48 mt-3' : 'max-h-0 mt-0'}
+            mt-3 md:mt-0
+            md:overflow-hidden md:transition-all md:duration-350
+            ${isHovered ? 'md:max-h-48 md:mt-3' : 'md:max-h-0'}
           `}
         >
           <p className="text-body text-dark/70">
@@ -127,7 +128,23 @@ function Benefits() {
         Benefits
       </p>
 
-      <div className="flex flex-col gap-1">
+      {/* Mobile: Stack vertically with no animations */}
+      <div className="flex flex-col gap-4 md:hidden">
+        {benefits.map(benefit => (
+          <div key={benefit.id} className="h-auto">
+            <BenefitTile
+              benefit={benefit}
+              isHovered={false}
+              onHover={() => {}}
+              onLeave={() => {}}
+              position=""
+            />
+          </div>
+        ))}
+      </div>
+
+      {/* Desktop: Keep the animated grid layout */}
+      <div className="hidden md:flex flex-col gap-1">
         <div 
           className="flex gap-1"
           style={{ 

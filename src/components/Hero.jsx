@@ -10,15 +10,15 @@ const rotatingTexts = [
 
 const rotatingColors = [
   'text-accent', 
-  `text-primary`,
-  'text-accent2',
-  'text-accent3',
-  'text-accent4',
-  'text-accent5',
-  'text-accent6',
+//   `text-primary`,
+//   'text-accent2',
+//   'text-accent3',
+//   'text-accent4',
+//   'text-accent5',
+//   'text-accent6',
 ]
 
-function Hero() {
+function Hero({ isLightMode = false }) {
   const [currentIndex, setCurrentIndex] = useState(0)
   const [isAnimating, setIsAnimating] = useState(false)
 
@@ -43,7 +43,9 @@ function Hero() {
     <section className="page-container py-12 md:py-20 lg:py-44">
       <div className="max-w-3xl">
         {/* Main headline */}
-        <h1 className="text-hero text-dark mb-6">
+        <h1 className={`text-hero mb-6 transition-colors duration-500 ${
+          isLightMode ? 'text-white' : 'text-dark'
+        }`}>
           Turn any camera feed into
           <br />
           <span 
@@ -58,7 +60,9 @@ function Hero() {
         </h1>
 
         {/* Subheadline */}
-        <p className="text-body text-dark/70 max-w-xl">
+        <p className={`text-body max-w-xl transition-colors duration-500 ${
+          isLightMode ? 'text-white/80' : 'text-dark/70'
+        }`}>
           Framewave connects to your existing camera infrastructure
           to convert on-screen events into workflows and automations.
         </p>

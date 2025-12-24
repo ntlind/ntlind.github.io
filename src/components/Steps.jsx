@@ -36,9 +36,16 @@ function StepCard({ step, index }) {
   const isImageLeft = step.imagePosition === 'left'
 
   return (
-    <div className={`flex flex-col ${isImageLeft ? 'md:flex-row' : 'md:flex-row-reverse'} items-center gap-8 md:gap-16 ${step.step === 1 ? 'pb-12 md:pb-20' : 'py-12 md:py-20'}`}>
-      {/* Image/Quote side */}
-      <div className="w-full md:w-1/2">
+    <div className={`flex flex-col ${isImageLeft ? 'md:flex-row' : 'md:flex-row-reverse'} items-center gap-4 md:gap-16 mb-16 md:mb-0 ${step.step === 1 ? 'md:pb-20' : 'md:py-20'}`}>
+      <div className={`w-full md:w-1/2 ${isImageLeft ? 'text-left' : 'text-left md:text-left'} order-1 md:order-${isImageLeft ? '2' : '1'}`}>
+        <p className="text-caption text-dark/50 mb-2">Step {step.step}</p>
+        <h3 className="text-hero text-dark mb-4">{step.title}</h3>
+        <p className="text-body text-dark/70 max-w-md">
+          {step.description}
+        </p>
+      </div>
+
+      <div className={`w-full md:w-1/2 order-2 md:order-${isImageLeft ? '1' : '2'}`}>
         {step.isQuote ? (
           <div className="rounded-10 p-8 md:p-12">
             <p className="text-heading text-primary italic text-center leading-relaxed">
@@ -53,15 +60,6 @@ function StepCard({ step, index }) {
           />
         )}
       </div>
-
-      {/* Text side */}
-      <div className={`w-full md:w-1/2 ${isImageLeft ? 'text-left' : 'text-left md:text-left'}`}>
-        <p className="text-caption text-dark/50 mb-2">Step {step.step}</p>
-        <h3 className="text-hero text-dark mb-4">{step.title}</h3>
-        <p className="text-body text-dark/70 max-w-md">
-          {step.description}
-        </p>
-      </div>
     </div>
   )
 }
@@ -69,11 +67,11 @@ function StepCard({ step, index }) {
 function Steps() {
   return (
     <section className="page-container py-12 md:py-20 lg:py-28">
-      <p className="text-caption text-dark/60 uppercase tracking-wider mb-8">
+      <p className="text-caption text-dark/60 uppercase tracking-wider mb-8 md:mb-8">
         How it works
       </p>
 
-      <div className="e">
+      <div className="">
         {steps.map((step, index) => (
           <StepCard key={step.step} step={step} index={index} />
         ))}

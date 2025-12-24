@@ -25,9 +25,14 @@ function CallToAction() {
           Let's put computer vision to work for you.
         </h2>
 
-        <button className="text-button px-8 py-3 rounded-10 border-2 border-white text-white bg-transparent hover:bg-white hover:text-primary transition-colors duration-200">
+        <a 
+          href="https://calendar.app.google/Yqs7KNcNVkdHw9hF6"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-button px-8 py-3 rounded-10 border-2 border-white text-white bg-transparent hover:bg-white hover:text-primary transition-colors duration-200 inline-block"
+        >
           Schedule time with Nick and Marwan
-        </button>
+        </a>
       </div>
     </section>
   )

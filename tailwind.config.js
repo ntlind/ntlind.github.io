@@ -6,7 +6,8 @@ export default {
       colors: {
         primary: "#2C7085",
         accent: "#5CD4C2",
-        dark: "#0C2C48",
+        darkaccent: "#0C2C48",
+        dark: "#04111c",
         accent2: "#4A9FB8",
         accent3: "#3DBAA3",
         accent4: "#1F5A6F",
