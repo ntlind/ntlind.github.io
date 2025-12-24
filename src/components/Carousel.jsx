@@ -68,28 +68,37 @@ function CarouselCard({ item }) {
 }
 
 function Carousel() {
-  // Interleave videos and images: video, image, video, image...
-  const interleavedItems = useMemo(() => {
+  // Distribute videos and images evenly across two carousels while maintaining alternation
+  const { firstHalf, secondHalf } = useMemo(() => {
     const videos = carouselItems.filter(item => item.type === 'video')
     const images = carouselItems.filter(item => item.type === 'image')
     
-    const result = []
-    const maxLength = Math.max(videos.length, images.length)
+    const carousel1 = []
+    const carousel2 = []
     
-    for (let i = 0; i < maxLength; i++) {
-      if (videos[i]) result.push(videos[i])
-      if (images[i]) result.push(images[i])
+    let videoIndex = 0
+    let imageIndex = 0
+    let useCarousel1 = true
+    
+    while (videoIndex < videos.length || imageIndex < images.length) {
+      const targetCarousel = useCarousel1 ? carousel1 : carousel2
+      
+      if (videoIndex < videos.length) {
+        targetCarousel.push(videos[videoIndex])
+        videoIndex++
+      }
+      
+      if (imageIndex < images.length) {
+        targetCarousel.push(images[imageIndex])
+        imageIndex++
+      }
+      
+      useCarousel1 = !useCarousel1
     }
     
-    return result
+    return { firstHalf: carousel1, secondHalf: carousel2 }
   }, [])
 
-  // Split items into two halves
-  const midpoint = Math.ceil(interleavedItems.length / 2)
-  const firstHalf = interleavedItems.slice(0, midpoint)
-  const secondHalf = interleavedItems.slice(midpoint)
-
-  // Duplicate items for seamless infinite scroll
   const duplicatedFirstHalf = [...firstHalf, ...firstHalf]
   const duplicatedSecondHalf = [...secondHalf, ...secondHalf]
 

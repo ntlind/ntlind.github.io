@@ -21,8 +21,8 @@ function Team() {
           <span className="font-semibold">Nick Lind</span> met at Facebook, where they built 
           speech and knowledge graph technologies together while working on the AI Research Team. 
           After seeing Fortune 500 companies struggle to implement even basic computer vision 
-          solutions with specialized ML teams and six-figure budgets, they realized smaller 
-          businesses were being completely left behind. That's why they founded Framewave: to 
+          solutions with specialized ML teams and six-figure budgets, they realized that smaller 
+          businesses were at risk of being completely left behind in the AI race. That&apos;s why they founded Framewave: to 
           empower businesses of all sizes to manage their operations using enterprise-grade 
           computer vision technologies.
         </p>

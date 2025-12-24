@@ -3,38 +3,43 @@ import { useState, useEffect } from 'react'
 const benefits = [
   {
     id: 1,
-    title: 'Skip the specialized hardware.',
-    description: 'Connect to your existing camera infrastructure and start monitoring in minutes. No need for expensive hardware upgrades or specialized equipment.'
+    title: 'Runs on your existing infrastructure.',
+    description: 'Our Edge Agent runs on your local network using minimal storage and compute, allowing you to trigger events using your existing analog or IP cameras. We\'ll set it up for you for free, or send you a Raspberry Pi for a small fee.'
   },
   {
     id: 2,
-    title: 'Set up your feed in minutes, no code required.',
-    description: 'Our intuitive interface lets you configure alerts and automations without writing a single line of code. Get up and running fast.'
+    title: 'Creates events and alerts in seconds.',
+    description: 'Use Framewave to describe what you want to detect in plain English. We\'ll automate the event detection and action workflow for you, no code required.'
   },
   {
     id: 3,
-    title: 'Receive alerts in seconds.',
-    description: 'Real-time detection and instant notifications ensure you never miss a critical event. Stay informed the moment something happens.'
+    title: 'Triggers actions and alerts in real-time.',
+    description: 'Integrate with your existing communication tools (e.g., Slack, Twilio, MS Teams, etc.). to receive immediate notifications when an event is detected. Batch non-critical events into daily or weekly summaries to stay informed without being overwhelmed.'
   },
   {
     id: 4,
-    title: 'Stay HIPAA and SOC2 compliant.',
-    description: 'Built with enterprise-grade security and compliance in mind. Your data stays secure and meets industry standards.'
+    title: 'Built with enterprise-grade security and compliance in mind.',
+    description: 'We take security and compliance seriously: your camera footage never leaves your local network, and all of your events and actions are stored in our HIPAA-compliant cloud infrastructure.'
   }
 ]
 
-function BenefitTile({ benefit, isHovered, onHover, onLeave, position }) {
+function BenefitTile({ benefit, isHovered, onHover, onLeave }) {
   const [showText, setShowText] = useState(true)
 
   useEffect(() => {
     if (isHovered) {
-      setShowText(false)
-      const timer = setTimeout(() => {
+      // Delay the state change to avoid synchronous setState in effect
+      const fadeTimer = setTimeout(() => setShowText(false), 0)
+      const showTimer = setTimeout(() => {
         setShowText(true)
       }, 350)
-      return () => clearTimeout(timer)
+      return () => {
+        clearTimeout(fadeTimer)
+        clearTimeout(showTimer)
+      }
     } else {
-      setShowText(true)
+      const resetTimer = setTimeout(() => setShowText(true), 0)
+      return () => clearTimeout(resetTimer)
     }
   }, [isHovered])
 
@@ -53,8 +58,7 @@ function BenefitTile({ benefit, isHovered, onHover, onLeave, position }) {
         transitionDelay: isHovered ? '0.05s' : '0s'
       }}
     >
-      {/* Arrow icon - down-right arrow */}
-      <div className="flex justify-end mb-4">
+      <div className="justify-end mb-4 hidden md:flex">
         <div className="w-10 h-10 md:w-12 md:h-12 rounded-lg bg-primary flex items-center justify-center">
           <svg 
             className="w-5 h-5 md:w-8 md:h-8 text-white" 
@@ -73,10 +77,8 @@ function BenefitTile({ benefit, isHovered, onHover, onLeave, position }) {
         </div>
       </div>
 
-      {/* Spacer to push content to bottom */}
       <div className="flex-1" />
 
-      {/* Content container with fade animations on desktop, static on mobile */}
       <div
         className={`
           md:${showText 
@@ -107,7 +109,7 @@ function BenefitTile({ benefit, isHovered, onHover, onLeave, position }) {
   )
 }
 
-function Benefits() {
+function Benefits({ isLightMode = false }) {
   const [hoveredId, setHoveredId] = useState(null)
 
   // Calculate flex values based on which tile is hovered
@@ -124,7 +126,9 @@ function Benefits() {
 
   return (
     <section className="page-container py-12 md:py-20 lg:py-28">
-      <p className="text-caption text-dark/60 uppercase tracking-wider mb-6 md:mb-8">
+      <p className={`text-caption uppercase tracking-wider mb-6 md:mb-8 transition-colors duration-500 ${
+        isLightMode ? 'text-white/70' : 'text-dark/60'
+      }`}>
         Benefits
       </p>
 

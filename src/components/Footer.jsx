@@ -1,5 +1,4 @@
 function Footer() {
-  const basePath = import.meta.env.BASE_URL
   const currentYear = new Date().getFullYear()
 
   const navLinks = [

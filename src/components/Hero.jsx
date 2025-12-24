@@ -49,7 +49,8 @@ function Hero({ isLightMode = false }) {
           Turn any camera feed into
           <br />
           <span 
-            className={`${colorClass} inline-block transition-all duration-500 ${
+            //   Ensure the text always takes up two lines on mobile so that the components below aren't constantly shifting around when the text changes.
+            className={`${colorClass} block md:inline-block transition-all duration-500 min-h-[2.5em] md:min-h-0 ${
               isAnimating 
                 ? 'opacity-0 translate-y-[-20px]' 
                 : 'opacity-100 translate-y-0'
@@ -59,12 +60,10 @@ function Hero({ isLightMode = false }) {
           </span>
         </h1>
 
-        {/* Subheadline */}
         <p className={`text-body max-w-xl transition-colors duration-500 ${
           isLightMode ? 'text-white/80' : 'text-dark/70'
         }`}>
-          Framewave connects to your existing camera infrastructure
-          to convert on-screen events into workflows and automations.
+          Framewave converts on-camera events into automated workflows using your existing infrastructure, no code required.
         </p>
       </div>
     </section>

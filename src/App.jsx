@@ -13,13 +13,12 @@ function App() {
 
   useEffect(() => {
     const handleScroll = () => {
-      // Check if user has scrolled past viewport height
       const scrollPosition = window.scrollY
       const viewportHeight = window.innerHeight
       
-      if (scrollPosition > viewportHeight && !hasScrolled) {
+      if (scrollPosition > viewportHeight * 0.5 && !hasScrolled) {
         setHasScrolled(true)
-      } else if (scrollPosition <= viewportHeight && hasScrolled) {
+      } else if (scrollPosition <= viewportHeight * 0.5 && hasScrolled) {
         setHasScrolled(false)
       }
     }
@@ -38,7 +37,7 @@ function App() {
       <main>
         <Hero isLightMode={!hasScrolled} />
         <Carousel />
-        <Benefits />
+        <Benefits isLightMode={!hasScrolled} />
         <Steps />
         <CallToAction />
         <Team />

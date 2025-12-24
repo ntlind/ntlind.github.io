@@ -1,19 +1,17 @@
 const steps = [
   {
     step: 1,
-    title: 'Connect to your feed',
-    description: 'Use our built-in integrations or connect via RTSP, RTMP, or HTTP.',
+    title: 'Connect to your cameras',
+    description: 'Run Edge Agent on your local network to monitor for events behind the safety of your existing infrastructure.',
     image: '1.png',
     imagePosition: 'left'
   },
   {
     step: 2,
     title: 'Define events',
-    description: "Describe, in plain English, what events you'd like to detect.",
+    description: "Describe one or more events that you want to watch for on a given camera feed.",
     image: '2.png',
     imagePosition: 'right',
-    isQuote: true,
-    quoteText: '"Send me a daily summary of the number of people who entered our mall."'
   },
   {
     step: 3,
@@ -25,18 +23,18 @@ const steps = [
   {
     step: 4,
     title: 'Get back to business',
-    description: 'Framewave runs in the background, triggering actions to help you make faster, smarter decisions.',
+    description: 'Framewave runs in the background, triggering your scheduled actions whenever an event is detected.',
     image: '4.png',
     imagePosition: 'right'
   }
 ]
 
-function StepCard({ step, index }) {
+function StepCard({ step }) {
   const basePath = import.meta.env.BASE_URL
   const isImageLeft = step.imagePosition === 'left'
 
   return (
-    <div className={`flex flex-col ${isImageLeft ? 'md:flex-row' : 'md:flex-row-reverse'} items-center gap-4 md:gap-16 mb-16 md:mb-0 ${step.step === 1 ? 'md:pb-20' : 'md:py-20'}`}>
+    <div className={`flex flex-col ${isImageLeft ? 'md:flex-row' : 'md:flex-row-reverse'} items-center gap-4 md:gap-32 mb-16 md:mb-0 ${step.step === 1 ? 'md:pb-20' : 'md:py-20'}`}>
       <div className={`w-full md:w-1/2 ${isImageLeft ? 'text-left' : 'text-left md:text-left'} order-1 md:order-${isImageLeft ? '2' : '1'}`}>
         <p className="text-caption text-dark/50 mb-2">Step {step.step}</p>
         <h3 className="text-hero text-dark mb-4">{step.title}</h3>
@@ -46,19 +44,11 @@ function StepCard({ step, index }) {
       </div>
 
       <div className={`w-full md:w-1/2 order-2 md:order-${isImageLeft ? '1' : '2'}`}>
-        {step.isQuote ? (
-          <div className="rounded-10 p-8 md:p-12">
-            <p className="text-heading text-primary italic text-center leading-relaxed">
-              {step.quoteText}
-            </p>
-          </div>
-        ) : (
           <img
             src={`${basePath}steps/${step.image}`}
             alt={step.title}
             className="w-full h-auto rounded-10 shadow-lg"
           />
-        )}
       </div>
     </div>
   )
@@ -72,8 +62,8 @@ function Steps() {
       </p>
 
       <div className="">
-        {steps.map((step, index) => (
-          <StepCard key={step.step} step={step} index={index} />
+        {steps.map((step) => (
+          <StepCard key={step.step} step={step} />
         ))}
       </div>
     </section>
