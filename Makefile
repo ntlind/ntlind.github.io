@@ -1,4 +1,4 @@
-.PHONY: install dev build preview deploy clean
+.PHONY: install dev build preview deploy update-gh-pages clean
 
 # Install dependencies
 install:
@@ -16,8 +16,12 @@ build:
 preview:
 	npm run preview
 
-# Deploy to GitHub Pages
+# Build and deploy to GitHub Pages (updates gh-pages branch)
 deploy:
+	npm run deploy
+
+# Alias for deploy - updates gh-pages branch with latest build
+update-gh-pages:
 	npm run deploy
 
 # Clean build artifacts
