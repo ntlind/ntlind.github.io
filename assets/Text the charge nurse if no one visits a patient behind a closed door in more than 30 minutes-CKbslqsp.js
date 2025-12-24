@@ -1,1 +1,0 @@
-const e="/framewave_landing_page/assets/Text%20the%20charge%20nurse%20if%20no%20one%20visits%20a%20patient%20behind%20a%20closed%20door%20in%20more%20than%2030%20minutes-9leDB_tr.png";export{e as default};
