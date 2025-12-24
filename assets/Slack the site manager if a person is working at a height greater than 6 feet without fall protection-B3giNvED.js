@@ -1,0 +1,1 @@
+const e="/framewave_landing_page/assets/Slack%20the%20site%20manager%20if%20a%20person%20is%20working%20at%20a%20height%20greater%20than%206%20feet%20without%20fall%20protection-CHuL7rYb.webm";export{e as default};
