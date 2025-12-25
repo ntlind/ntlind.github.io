@@ -82,7 +82,7 @@ function FAQ() {
       <p className="text-caption text-dark/60 uppercase tracking-wider mb-8">
       FAQ
         </p>
-      <div className="max-w-4xl mx-auto">
+      <div className="mx-auto">
         <h2 className="text-hero text-dark mb-12">
           Frequently asked questions, answered.
         </h2>
