@@ -22,7 +22,7 @@ function CallToAction() {
       {/* Content */}
       <div className="page-container relative z-10">
         <h2 className="text-hero text-white mb-8 max-w-2xl">
-          Schedule a demo to see Framewave in action.
+          See how Framewave can help you automate your business
         </h2>
 
         <a 

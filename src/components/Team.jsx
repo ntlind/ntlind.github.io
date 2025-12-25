@@ -2,7 +2,7 @@ function Team() {
   const basePath = import.meta.env.BASE_URL
 
   return (
-    <section className="page-container py-12 md:py-20 lg:py-28">
+    <section id="team" className="page-container py-12 md:py-20 lg:py-28">
       <p className="text-caption text-dark/60 uppercase tracking-wider mb-8">
         Team
       </p>

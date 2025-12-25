@@ -40,7 +40,7 @@ function Hero({ isLightMode = false }) {
   const colorClass = rotatingColors[currentIndex % rotatingColors.length]
 
   return (
-    <section className="page-container py-12 md:py-20 lg:py-44">
+    <section id="home" className="page-container py-12 md:py-20 lg:py-44">
       <div className="max-w-3xl">
         {/* Main headline */}
         <h1 className={`text-hero mb-6 transition-colors duration-500 ${
@@ -63,7 +63,7 @@ function Hero({ isLightMode = false }) {
         <p className={`text-body max-w-xl transition-colors duration-500 ${
           isLightMode ? 'text-white/80' : 'text-dark/70'
         }`}>
-          Framewave converts on-camera events into automated workflows using your existing infrastructure, no code required.
+          Automatically detect events and trigger automations using your existing hardware - no code or complicated setup required.
         </p>
       </div>
     </section>

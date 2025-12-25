@@ -2,75 +2,75 @@ function Footer() {
   const currentYear = new Date().getFullYear()
 
   const navLinks = [
-    // { label: 'Home', href: '#' },
-    // { label: 'Benefits', href: '#benefits' },
-    // { label: 'How it works', href: '#how-it-works' },
-    // { label: 'Team', href: '#team' },
-    // { label: 'Contact us', href: 'mailto:hello@framewave.ai' },
-  ]
-
-  const legalLinks = [
-    { label: 'Privacy Policy', href: '#' },
-    { label: 'Terms & Conditions', href: '#' },
+    { label: 'Home', href: '#' },
+    { label: 'Benefits', href: '#benefits' },
+    { label: 'How it works', href: '#how-it-works' },
+    { label: 'Team', href: '#team' },
+    { label: 'Contact', href: 'mailto:hello@framewave.ai' },
   ]
 
   return (
     <footer className="bg-primary text-white py-12 md:py-16">
       <div className="page-container">
-        <div className="flex flex-col md:flex-row justify-between gap-12 md:gap-8">
-          {/* Left side - Logo and contact */}
+        <div className="flex flex-col md:flex-row justify-between gap-12 md:gap-8 mb-12">
+          {/* Left side - Contact */}
           <div className="flex-1">
-            {/* Logo */}
-            <div className="flex items-center gap-3 mb-6">
-              {/* <div className="h-12 w-12 bg-white/10 rounded-lg flex items-center justify-center p-1">
-                <img
-                  src={`${basePath}logos/main.png`}
-                  alt="Framewave"
-                  className="h-full w-auto"
-                />
-              </div> */}
-              <span className="text-2xl font-semibold text-white">framewave</span>
-            </div>
-
-            {/* Contact info */}
-            <div className="text-body text-white/80 space-y-1">
-              <p>San Francisco, CA</p>
-              <p>hello@framewave.ai</p>
-            </div>
-
-            {/* Copyright */}
-            <p className="text-caption text-white/60 mt-8">
-              © {currentYear} Framewave
+            <p className="text-sm text-white/70 mb-2">
+              Interested in working with us? Let&apos;s chat!
             </p>
+            <div className="mb-4">
+              <a 
+                href="mailto:hello@framewave.ai"
+                className="text-4xl font-semibold text-white hover:text-accent transition-colors duration-200"
+              >
+                hello@framewave.ai
+              </a>
+            </div>
+            <a 
+              href="https://calendar.app.google/Yqs7KNcNVkdHw9hF6"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white underline hover:text-accent transition-colors duration-200"
+            >
+              Schedule time with Nick and Marwan
+            </a>
           </div>
 
           {/* Right side - Navigation */}
-          <div className="flex flex-col md:flex-row gap-12 md:gap-24">
-            {/* Main navigation */}
+          <div className="flex gap-12 md:gap-24">
             <nav className="flex flex-col gap-3">
+              <p className="text-sm text-white/70 mb-2">Navigation</p>
               {navLinks.map((link) => (
                 <a
                   key={link.label}
                   href={link.href}
-                  className="text-button text-white hover:text-accent transition-colors duration-200"
+                  className="text-white hover:text-accent transition-colors duration-200"
                 >
                   {link.label}
                 </a>
               ))}
             </nav>
+          </div>
+        </div>
 
-            {/* Legal links */}
-            <nav className="flex flex-col md:flex-row gap-3 md:gap-8 md:self-end">
-              {legalLinks.map((link) => (
-                <a
-                  key={link.label}
-                  href={link.href}
-                  className="text-caption text-white/70 hover:text-white transition-colors duration-200"
-                >
-                  {link.label}
-                </a>
-              ))}
-            </nav>
+        {/* Bottom - Legal */}
+        <div className="flex flex-col md:flex-row justify-between items-center gap-4 pt-8 border-t border-white/10">
+          <p className="text-sm text-white/70">
+            © {currentYear} Framewave. All rights reserved.
+          </p>
+          <div className="flex gap-8">
+            <a
+              href="/privacy-policy.html"
+              className="text-sm text-white/70 hover:text-white transition-colors duration-200"
+            >
+              Privacy Policy
+            </a>
+            <a
+              href="/terms-of-service.html"
+              className="text-sm text-white/70 hover:text-white transition-colors duration-200"
+            >
+              Terms of Service
+            </a>
           </div>
         </div>
       </div>

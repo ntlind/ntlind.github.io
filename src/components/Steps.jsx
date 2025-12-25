@@ -2,28 +2,28 @@ const steps = [
   {
     step: 1,
     title: 'Connect to your cameras',
-    description: 'Run Edge Agent on your local network to monitor for events behind the safety of your existing infrastructure.',
+    description: 'Run Edge Agent on your local network to monitor for events behind the safety of your existing infrastructure. Compatible with virtually any camera - from analog CCTV to modern IP cameras.',
     image: '1.png',
     imagePosition: 'left'
   },
   {
     step: 2,
     title: 'Define events',
-    description: "Describe one or more events that you want to watch for on a given camera feed.",
+    description: "Describe, in plain English, what events you'd like to detect. Define boundaries, duration requirements, or other constraints to match your specific needs.",
     image: '2.png',
     imagePosition: 'right',
   },
   {
     step: 3,
     title: 'Create actions',
-    description: 'Tie one or more events to an action, such as a real-time Slack alert or weekly summary email.',
+    description: 'Tie events to an action, such as a real-time Slack alert or weekly summary email. Build powerful "if this, then that" workflows without writing code.',
     image: '3.png',
     imagePosition: 'left'
   },
   {
     step: 4,
     title: 'Get back to business',
-    description: 'Framewave runs in the background, triggering your scheduled actions whenever an event is detected.',
+    description: 'That\'s it. Framewave runs silently in the background, triggering your workflows 24/7. Update events or actions anytime from your dashboard.',
     image: '4.png',
     imagePosition: 'right'
   }
@@ -56,7 +56,7 @@ function StepCard({ step }) {
 
 function Steps() {
   return (
-    <section className="page-container py-12 md:py-20 lg:py-28">
+    <section id="how-it-works" className="page-container py-12 md:py-20 lg:py-28">
       <p className="text-caption text-dark/60 uppercase tracking-wider mb-8 md:mb-8">
         How it works
       </p>

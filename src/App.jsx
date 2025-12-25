@@ -5,6 +5,7 @@ import Carousel from './components/Carousel'
 import Benefits from './components/Benefits'
 import Steps from './components/Steps'
 import Team from './components/Team'
+import FAQ from './components/FAQ'
 import CallToAction from './components/CallToAction'
 import Footer from './components/Footer'
 
@@ -41,6 +42,7 @@ function App() {
         <Steps />
         <CallToAction />
         <Team />
+        <FAQ />
       </main>
       <Footer />
     </div>

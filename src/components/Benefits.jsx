@@ -3,23 +3,23 @@ import { useState, useEffect } from 'react'
 const benefits = [
   {
     id: 1,
-    title: 'Runs on your existing infrastructure.',
-    description: 'Our Edge Agent runs on your local network using minimal storage and compute, allowing you to trigger events using your existing analog or IP cameras. We\'ll set it up for you for free, or send you a Raspberry Pi for a small fee.'
+    title: 'Works with your existing equipment.',
+    description: 'Install our Edge Agent on your local network to detect events using your existing analog and IP cameras. We\'ll set it up for you for free, or send you a plug-and-play Raspberry Pi for a small fee.'
   },
   {
     id: 2,
-    title: 'Creates events and alerts in seconds.',
-    description: 'Use Framewave to describe what you want to detect in plain English. We\'ll automate the event detection and action workflow for you, no code required.'
+    title: 'Set up intelligent alerts in plain English.',
+    description: 'Just describe what you want to detect: "notify me when someone isn\'t wearing a safety vest" or "count trucks entering the loading dock." Our AI handles complex detections automatically. No coding required.'
   },
   {
     id: 3,
     title: 'Triggers actions and alerts in real-time.',
-    description: 'Integrate with your existing communication tools (e.g., Slack, Twilio, MS Teams, etc.). to receive immediate notifications when an event is detected. Batch non-critical events into daily or weekly summaries to stay informed without being overwhelmed.'
+    description: 'Integrate with your existing communication tools (e.g., Slack, Twilio, MS Teams, etc.) to receive immediate notifications when an event is detected. Batch non-critical events into daily or weekly summaries to stay informed without being overwhelmed.'
   },
   {
     id: 4,
     title: 'Built with enterprise-grade security and compliance in mind.',
-    description: 'We take security and compliance seriously: your camera footage never leaves your local network, and all of your events and actions are stored in our HIPAA-compliant cloud infrastructure.'
+    description: 'Enterprise-grade security with zero compromises. Camera feeds stay on your local network—only event metadata reaches our HIPAA-compliant cloud.'
   }
 ]
 
@@ -125,7 +125,7 @@ function Benefits({ isLightMode = false }) {
   }
 
   return (
-    <section className="page-container py-12 md:py-20 lg:py-28">
+    <section id="benefits" className="page-container py-12 md:py-20 lg:py-28">
       <p className={`text-caption uppercase tracking-wider mb-6 md:mb-8 transition-colors duration-500 ${
         isLightMode ? 'text-white/70' : 'text-dark/60'
       }`}>
