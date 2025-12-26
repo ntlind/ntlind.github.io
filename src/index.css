@@ -52,7 +52,7 @@ body {
 }
 
 .card:hover .card-overlay {
-    @apply bg-black/80;
+    @apply bg-black/60;
 }
 
 .page-container {

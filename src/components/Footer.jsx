@@ -65,12 +65,12 @@ function Footer() {
             >
               Privacy Policy
             </a>
-            <a
+            {/* <a
               href="/terms-of-service.html"
               className="text-sm text-white/70 hover:text-white transition-colors duration-200"
             >
               Terms of Service
-            </a>
+            </a> */}
           </div>
         </div>
       </div>

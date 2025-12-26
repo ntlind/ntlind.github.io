@@ -1,4 +1,4 @@
-import { useMemo } from 'react'
+import { useMemo, useState } from 'react'
 
 // Dynamically import all carousel media files
 const carouselFiles = import.meta.glob('/public/carousel/*', { query: '?url', import: 'default' })
@@ -25,7 +25,7 @@ const carouselItems = Object.keys(carouselFiles).map(path => {
   }
 })
 
-function CarouselCard({ item }) {
+function CarouselCard({ item, onMouseEnter, onMouseLeave }) {
   const basePath = import.meta.env.BASE_URL
   const isVideo = item.type === 'video'
   
@@ -35,7 +35,11 @@ function CarouselCard({ item }) {
     : 'w-48 md:w-[300px] h-60 md:h-[450px] flex-shrink-0'
 
   return (
-    <div className={`card relative ${cardClasses} bg-transparent overflow-hidden`}>
+    <div 
+      className={`card group relative ${cardClasses} bg-transparent overflow-hidden`}
+      onMouseEnter={onMouseEnter}
+      onMouseLeave={onMouseLeave}
+    >
       {/* Media */}
       {isVideo ? (
         <video
@@ -59,7 +63,7 @@ function CarouselCard({ item }) {
       
       {/* Caption overlay */}
       <div className="absolute top-0 left-0 right-0 p-4 z-10">
-        <p className="text-base text-white leading-snug">
+        <p className="text-xl text-white leading-snug truncate group-hover:whitespace-normal group-hover:overflow-visible">
           {item.caption}
         </p>
       </div>
@@ -68,6 +72,8 @@ function CarouselCard({ item }) {
 }
 
 function Carousel() {
+  const [hoveredRow, setHoveredRow] = useState(null)
+
   // Distribute videos and images evenly across two carousels while maintaining alternation
   const { firstHalf, secondHalf } = useMemo(() => {
     const videos = carouselItems.filter(item => item.type === 'video')
@@ -105,16 +111,36 @@ function Carousel() {
   return (
     <section className="py-8 md:py-12 overflow-hidden space-y-1.5">
       {/* First carousel - scrolling left */}
-      <div className="animate-scroll-left flex gap-1 md:gap-1.5 w-max">
+      <div 
+        className="flex gap-1 md:gap-1.5 w-max animate-scroll-left"
+        style={{
+          animationPlayState: hoveredRow === 1 ? 'paused' : 'running'
+        }}
+      >
         {duplicatedFirstHalf.map((item, index) => (
-          <CarouselCard key={`left-${item.file}-${index}`} item={item} />
+          <CarouselCard 
+            key={`left-${item.file}-${index}`} 
+            item={item} 
+            onMouseEnter={() => setHoveredRow(1)}
+            onMouseLeave={() => setHoveredRow(null)}
+          />
         ))}
       </div>
       
       {/* Second carousel - scrolling right */}
-      <div className="animate-scroll-right flex gap-1 md:gap-1.5 w-max">
+      <div 
+        className="flex gap-1 md:gap-1.5 w-max animate-scroll-right"
+        style={{
+          animationPlayState: hoveredRow === 2 ? 'paused' : 'running'
+        }}
+      >
         {duplicatedSecondHalf.map((item, index) => (
-          <CarouselCard key={`right-${item.file}-${index}`} item={item} />
+          <CarouselCard 
+            key={`right-${item.file}-${index}`} 
+            item={item} 
+            onMouseEnter={() => setHoveredRow(2)}
+            onMouseLeave={() => setHoveredRow(null)}
+          />
         ))}
       </div>
     </section>

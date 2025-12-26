@@ -63,7 +63,7 @@ function Hero({ isLightMode = false }) {
         <p className={`text-body max-w-xl transition-colors duration-500 ${
           isLightMode ? 'text-white/80' : 'text-dark/70'
         }`}>
-          Automatically detect events and trigger automations using your existing hardware - no code or complicated setup required.
+          Automatically detect events and trigger workflows using your existing camera infrastructure - no code required.
         </p>
       </div>
     </section>

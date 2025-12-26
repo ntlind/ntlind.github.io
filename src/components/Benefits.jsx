@@ -9,7 +9,7 @@ const benefits = [
   {
     id: 2,
     title: 'Set up intelligent alerts in plain English.',
-    description: 'Just describe what you want to detect: "notify me when someone isn\'t wearing a safety vest" or "count trucks entering the loading dock." Our AI handles complex detections automatically. No coding required.'
+    description: 'Just describe what you want to detect: "notify me when someone isn\'t wearing a safety vest" or "count trucks entering the loading dock." Our AI handles complex detections automatically, no coding required. Add, delete, or modify existing events and actions anytime from your dashboard.'
   },
   {
     id: 3,

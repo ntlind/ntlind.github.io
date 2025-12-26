@@ -2,7 +2,6 @@ import { useState, useEffect } from 'react'
 import Header from './components/Header'
 import Hero from './components/Hero'
 import Carousel from './components/Carousel'
-import Benefits from './components/Benefits'
 import Steps from './components/Steps'
 import Team from './components/Team'
 import FAQ from './components/FAQ'
@@ -38,7 +37,6 @@ function App() {
       <main>
         <Hero isLightMode={!hasScrolled} />
         <Carousel />
-        <Benefits isLightMode={!hasScrolled} />
         <Steps />
         <CallToAction />
         <Team />

@@ -2,28 +2,28 @@ const steps = [
   {
     step: 1,
     title: 'Connect to your cameras',
-    description: 'Run Edge Agent on your local network to monitor for events behind the safety of your existing infrastructure. Compatible with virtually any camera - from analog CCTV to modern IP cameras.',
+    description: 'Install our Edge Agent on your local network to allow Framewave to access your analog and IP camera feeds behind the safety of your existing infrastructure. We\'ll set it up for you for free, or send you a plug-and-play Raspberry Pi for a small fee.',
     image: '1.png',
     imagePosition: 'left'
   },
   {
     step: 2,
-    title: 'Define events',
-    description: "Describe, in plain English, what events you'd like to detect. Define boundaries, duration requirements, or other constraints to match your specific needs.",
+    title: 'Define events in plain English',
+    description: "Describe what events you'd like to detect: 'notify me when someone isn't wearing a safety vest' or 'count trucks entering the loading dock.' Our AI handles complex detections automatically, no coding required. Add, delete, or modify existing events and actions anytime from your dashboard.",
     image: '2.png',
     imagePosition: 'right',
   },
   {
     step: 3,
-    title: 'Create actions',
-    description: 'Tie events to an action, such as a real-time Slack alert or weekly summary email. Build powerful "if this, then that" workflows without writing code.',
+    title: 'Trigger actions and alerts',
+    description: 'Tie text messages, custom webhook calls, or alerts (via email, Slack, Twilio, etc.) to your events to receive immediate notifications when an event is detected. Optionally, batch non-critical events into daily or weekly summaries to stay informed without being overwhelmed.',
     image: '3.png',
     imagePosition: 'left'
   },
   {
     step: 4,
     title: 'Get back to business',
-    description: 'That\'s it. Framewave runs silently in the background, triggering your workflows 24/7. Update events or actions anytime from your dashboard.',
+    description: 'That\'s it. Framewave runs silently in the background on our SOC2 and HIPAA compliant servers, triggering your workflows 24/7. Update events or actions anytime from your dashboard.',
     image: '4.png',
     imagePosition: 'right'
   }

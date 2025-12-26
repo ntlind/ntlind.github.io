@@ -7,11 +7,11 @@ function Team() {
         Team
       </p>
 
-      <div className="mb-8 md:mb-12">
+      <div className="mb-8 md:mb-12 flex justify-center">
         <img
           src={`${basePath}team/team.png`}
           alt="Marwan Harajli and Nick Lind"
-          className="w-full h-auto rounded-10 shadow-lg"
+          className="w-[500px] h-auto rounded-10 shadow-lg"
         />
       </div>
 

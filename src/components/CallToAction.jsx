@@ -21,8 +21,8 @@ function CallToAction() {
 
       {/* Content */}
       <div className="page-container relative z-10">
-        <h2 className="text-hero text-white mb-8 max-w-4xl">
-          See how we can help you automate your business
+        <h2 className="text-hero text-white mb-8 max-w-5xl">
+          Start a free two-week trial to see how we can automate your business
         </h2>
 
         <a 
