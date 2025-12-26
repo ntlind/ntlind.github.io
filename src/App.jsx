@@ -3,6 +3,7 @@ import Header from './components/Header'
 import Hero from './components/Hero'
 import Carousel from './components/Carousel'
 import Steps from './components/Steps'
+import UseCase from './components/UseCase'
 import Team from './components/Team'
 import FAQ from './components/FAQ'
 import CallToAction from './components/CallToAction'
@@ -38,6 +39,7 @@ function App() {
         <Hero isLightMode={!hasScrolled} />
         <Carousel />
         <Steps />
+        <UseCase />
         <CallToAction />
         <Team />
         <FAQ />

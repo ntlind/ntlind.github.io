@@ -23,7 +23,7 @@ const steps = [
   {
     step: 4,
     title: 'Get back to business',
-    description: 'That\'s it. Framewave runs silently in the background on our SOC2 and HIPAA compliant servers, triggering your workflows 24/7. Update events or actions anytime from your dashboard.',
+    description: 'That\'s it. Framewave runs silently in the background on our SOC2 and HIPAA compliant servers, triggering your workflows 24/7. Auditable event logs and frame screenshots are immediately available for review in your dashboard.',
     image: '4.png',
     imagePosition: 'right'
   }
@@ -35,7 +35,7 @@ function StepCard({ step }) {
 
   return (
     <div className={`flex flex-col ${isImageLeft ? 'md:flex-row' : 'md:flex-row-reverse'} items-center gap-4 md:gap-32 mb-16 md:mb-0 ${step.step === 1 ? 'md:pb-20' : 'md:py-20'}`}>
-      <div className={`w-full md:w-1/2 ${isImageLeft ? 'text-left' : 'text-left md:text-left'} order-1 md:order-${isImageLeft ? '2' : '1'}`}>
+      <div className="w-full md:w-1/2 text-left">
         <p className="text-caption text-dark/50 mb-2">Step {step.step}</p>
         <h3 className="text-hero text-dark mb-4">{step.title}</h3>
         <p className="text-body text-dark/70 max-w-md">
@@ -43,7 +43,7 @@ function StepCard({ step }) {
         </p>
       </div>
 
-      <div className={`w-full md:w-1/2 order-2 md:order-${isImageLeft ? '1' : '2'}`}>
+      <div className="w-full md:w-1/2">
           <img
             src={`${basePath}steps/${step.image}`}
             alt={step.title}
