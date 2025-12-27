@@ -23,7 +23,7 @@ const steps = [
   {
     step: 4,
     title: 'Get back to business',
-    description: 'That\'s it. Framewave runs silently in the background on our SOC2 and HIPAA compliant servers, triggering your workflows 24/7. Auditable event logs and frame screenshots are immediately available for review in your dashboard.',
+    description: 'That\'s it. Framewave runs silently in the background on our SOC2-compliant servers, triggering your workflows 24/7. Auditable event logs and frame screenshots are immediately available for review in your dashboard.',
     image: '4.png',
     imagePosition: 'right'
   }

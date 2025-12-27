@@ -4,15 +4,15 @@ const useCases = [
   {
     id: '1',
     label: 'Construction & Mining',
-    headline: 'Proactive safety management for your multi-site construction operations',
+    headline: 'Proactive safety management for multi-site construction operations',
     bullets: [
       {
         bold: 'Detect and correct safety violations in real-time',
-        detail: '(e.g., entering exclusion zones, missing fall protection or PPE, etc.) by sending immediate alerts to site supervisors before incidents escalate.'
+        detail: '(e.g., workers entering exclusion zones, missing fall protection or PPE, etc.) by sending immediate alerts to site supervisors before incidents escalate.'
       },
       {
-        bold: 'Automate weekly safety documentation',
-        detail: 'with violation breakdowns, near-miss patterns, and crew-level risk metrics delivered directly to your safety managers. Maintain audit-ready records across every active jobsite.'
+        bold: 'Automatically generate weekly safety documentation',
+        detail: 'with violation breakdowns, near-miss patterns, and crew-level risk metrics delivered directly to safety managers. Maintain audit-ready records across every active jobsite.'
       },
       {
         bold: 'Monitor material deliveries and equipment staging',
@@ -23,7 +23,7 @@ const useCases = [
   {
     id: '2',
     label: 'Healthcare & Nursing',
-    headline: 'Continuous patient monitoring without burdening your staff',
+    headline: 'Continuous patient monitoring without the staff burden',
     bullets: [
       {
         bold: 'Alert nursing staff when patients exhibit concerning behaviors',
