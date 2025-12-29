@@ -63,7 +63,7 @@ function CarouselCard({ item, onMouseEnter, onMouseLeave }) {
       
       {/* Caption overlay */}
       <div className="absolute top-0 left-0 right-0 p-4 z-10">
-        <p className="text-xl text-white leading-snug truncate group-hover:whitespace-normal group-hover:overflow-visible">
+        <p className="text-xl text-white leading-snug group-hover:whitespace-normal group-hover:overflow-visible">
           {item.caption}
         </p>
       </div>

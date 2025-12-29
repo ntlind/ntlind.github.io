@@ -3,7 +3,6 @@ function Footer() {
 
   const navLinks = [
     { label: 'Home', href: '#' },
-    { label: 'Benefits', href: '#benefits' },
     { label: 'How it works', href: '#how-it-works' },
     { label: 'Use cases', href: '#use-case' },
     { label: 'Team', href: '#team' },

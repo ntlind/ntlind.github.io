@@ -24,7 +24,12 @@ const faqs = [
   {
     id: 5,
     question: 'What types of notifications can I receive when an event is detected?',
-    answer: 'Framewave integrates with Slack, Twilio, email (via SMTP) and MS Teams by default. You can also define custom webhooks to integrate with any of your existing systems. We can help you set up custom integrations for your specific needs, free of charge.'
+    answer: 'Framewave integrates with Slack, Twilio, email (via SMTP) and MS Teams by default. You can also call custom webhooks to integrate with any of your existing systems. We can also help you set up custom integrations for your specific needs.'
+  },
+  {
+    id: 6,
+    question: 'Is there a limit on the number of events, cameras, or actions I can define?',
+    answer: 'There\'s no limit on the number of events, cameras, and actions you can define. Your subscription includes a variable cost component that depends on your consumption, so you can freely increase or decrease your usage as needed.',
   }
 ]
 
@@ -84,7 +89,7 @@ function FAQ() {
         </p>
       <div className="mx-auto">
         <h2 className="text-hero text-dark mb-12">
-          Frequently asked questions, answered.
+          Frequently asked questions
         </h2>
 
         <div className="space-y-0">

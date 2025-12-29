@@ -3,7 +3,7 @@ import { useState } from 'react'
 const useCases = [
   {
     id: '1',
-    label: 'Construction & Mining',
+    label: 'Construction',
     headline: 'Proactive safety management for multi-site construction operations',
     bullets: [
       {
@@ -22,7 +22,7 @@ const useCases = [
   },
   {
     id: '2',
-    label: 'Healthcare & Nursing',
+    label: 'Healthcare',
     headline: 'Continuous patient monitoring without the staff burden',
     bullets: [
       {

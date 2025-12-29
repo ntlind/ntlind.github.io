@@ -2,7 +2,7 @@ const steps = [
   {
     step: 1,
     title: 'Connect to your cameras',
-    description: 'Install our Edge Agent on your local network to allow Framewave to access your analog and IP camera feeds behind the safety of your existing infrastructure. We\'ll set it up for you for free, or send you a plug-and-play Raspberry Pi for a small fee.',
+    description: 'Install our Edge Agent on your local network to allow Framewave to access your analog and IP camera feeds behind the safety of your existing infrastructure. We\'ll send you a plug-and-play Raspberry Pi for a small fee if you\'d prefer not to run our Agent on your network\'s existing compute.',
     image: '1.png',
     imagePosition: 'left'
   },
@@ -16,14 +16,14 @@ const steps = [
   {
     step: 3,
     title: 'Trigger actions and alerts',
-    description: 'Tie text messages, custom webhook calls, or alerts (via email, Slack, Twilio, etc.) to your events to receive immediate notifications when an event is detected. Optionally, batch non-critical events into daily or weekly summaries to stay informed without being overwhelmed.',
+    description: 'Tie text messages, custom webhook calls, or alerts (via email, Slack, Twilio, etc.) to your events to receive immediate notifications when an event is detected. Optionally, batch non-critical events into daily or weekly summaries to stay informed without being disrupted. Auditable event logs and frame screenshots are immediately available for review in your dashboard.',
     image: '3.png',
     imagePosition: 'left'
   },
   {
     step: 4,
     title: 'Get back to business',
-    description: 'That\'s it. Framewave runs silently in the background on our SOC2-compliant servers, triggering your workflows 24/7. Auditable event logs and frame screenshots are immediately available for review in your dashboard.',
+    description: 'That\'s it. Framewave runs silently in the background on our SOC2-compliant servers, triggering your actions 24/7.',
     image: '4.png',
     imagePosition: 'right'
   }
