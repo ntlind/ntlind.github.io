@@ -41,7 +41,7 @@ const useCases = [
   },
   {
     id: '3',
-    label: 'Restaurants & Retail',
+    label: 'Retail',
     headline: 'Operational visibility across every location and shift',
     bullets: [
       {
