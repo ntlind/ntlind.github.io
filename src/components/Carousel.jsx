@@ -48,7 +48,7 @@ function CarouselCard({ item, isActive, cardId }) {
       {isVideo ? (
         <video
           src={`${basePath}carousel/${encodeURIComponent(item.file)}`}
-          className="absolute inset-0 w-full h-full object-cover pointer-events-none"
+          className="absolute inset-0 object-cover w-full h-full pointer-events-none"
           autoPlay
           loop
           muted
@@ -58,7 +58,7 @@ function CarouselCard({ item, isActive, cardId }) {
         <img
           src={`${basePath}carousel/${encodeURIComponent(item.file)}`}
           alt={item.caption}
-          className="absolute inset-0 w-full h-full object-cover pointer-events-none"
+          className="absolute inset-0 object-cover w-full h-full pointer-events-none"
           draggable={false}
         />
       )}
@@ -72,7 +72,7 @@ function CarouselCard({ item, isActive, cardId }) {
       />
       
       {/* Caption overlay */}
-      <div className="absolute top-0 left-0 right-0 p-4 z-10">
+      <div className="absolute top-0 left-0 right-0 z-10 p-4">
         <p className={`text-xl text-white leading-snug transition-all duration-300
           ${isActive ? 'whitespace-normal overflow-visible' : ''}`}>
           {item.caption}
@@ -223,7 +223,7 @@ function CarouselRow({ items, direction, rowId }) {
         return newPos
       })
     }
-  }, [interactionState])
+  }, [interactionState, getHalfWidth])
 
   const handleEnd = useCallback(() => {
     if (interactionState === 'idle') return
